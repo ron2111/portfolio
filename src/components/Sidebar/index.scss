@@ -1,6 +1,6 @@
 .nav-bar {
   background: #181818; 
-  width: 60px;
+  width: 75px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -14,11 +14,11 @@
     img { 
       display: block;
       margin: 8px auto;
-      width: 44px;
+      width: 54px;
       height: auto;
 
       &.sub-logo {
-        width: 50px;
+        width: 65px;
       }
     }
   }
@@ -92,7 +92,7 @@
 
     a.portfolio-link {
       &:after {
-        content: 'PORTFOLIO';
+        content: 'WORK';
       }
     }
 
@@ -117,7 +117,7 @@
       a {
         padding: 7px 0;
         display: block;
-        font-size: 15px;
+        font-size: 20px;
         line-height: 16px;
         color: #4d4d4e;
       }

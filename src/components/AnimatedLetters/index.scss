@@ -1,0 +1,28 @@
+.text-animate { // default class for text animation
+    display: inline-block; // to make it appear as a block and a sentence
+    opacity: 0;
+    animation: bounceIn 1s 2s;
+    // bounce animation
+    animation-fill-mode: forwards;
+    min-width: 10px;
+
+    
+}
+
+.text-animate-hover {
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+
+    &:hover {
+        animation: rubberBand 1s;
+        //color: #A41875;
+         color: #FD7A2C;
+    }
+}
+
+@for $i from 1 through 35 {
+    .text-animate._#{$i} {
+        animation-delay: #{$i / 10}s;
+    }
+}
