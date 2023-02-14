@@ -22,7 +22,12 @@ const Contact = () => {
     e.preventDefault() // To prevent Default submission
 
     emailjs
-      .sendForm('gmail', 'template_kx8n1au', form.current, 'kRQFquVBiGpfbnTQL')
+      .sendForm(
+        'service_8yagw3l',
+        'template_kx8n1au',
+        form.current,
+        'kRQFquVBiGpfbnTQL'
+      )
       .then(
         () => {
           // successful
@@ -54,7 +59,7 @@ const Contact = () => {
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
-              {/* form : useRef */}
+              {/* form : useRef hook */}
               <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
