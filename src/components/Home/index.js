@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import LogoTitle from '../../assets/images/logo-r.png'
-// import Logo from './Logo'
+import gif from '../../assets/images/web_dev.svg'
 import './index.scss'
+import { MapContainer } from 'react-leaflet'
 
 const Home = () => {
   // to toggle between animation of letters
@@ -71,7 +72,11 @@ const Home = () => {
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
 
-            <img src={LogoTitle} alt="Full Stack Developer Name" />
+            <img
+              class="MainLogo"
+              src={LogoTitle}
+              alt="Full Stack Developer Name"
+            />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray} // ohan
@@ -93,8 +98,11 @@ const Home = () => {
         </div>
         {/* <Logo /> */}
       </div>
+      <div className="hero-container">
+        <img class="gif" src={gif}></img>
+      </div>
 
-      {/* <Loader type="pacman" /> */}
+      <Loader type="pacman" />
     </>
   )
 }

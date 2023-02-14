@@ -1,7 +1,7 @@
 $primary-color: #FD7A2C;
 
 @import 'animate.css';
-@import '~loaders.css/src/animations/pacman.scss';
+@import '~loaders.css/src/animations/pacman.scss'; // loader animation
 
 @font-face { // default-font
   font-family: 'Helvetica Neue';
@@ -34,17 +34,17 @@ textarea { // default for input and text area
 .loader-hidden {
   display: none;
 }
-
+// loader styles
 .loader-active {
   display: block;
   position: absolute;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: auto; // center placing
   top: 0;
   bottom: 0;
   width: 50px;
   height: 50px;
-  animation: fadeOut 1s 1s;
+  animation: fadeOut 1s 1s; // fading animation
   animation-fill-mode: forwards;
 }

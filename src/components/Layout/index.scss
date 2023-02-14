@@ -42,6 +42,7 @@
     animation-delay: 1s;
   }
   
+  // contact, about and portfolio-page layouts
   .container.contact-page,
   .container.about-page,
   .container.portfolio-page {
@@ -57,7 +58,7 @@
         left: -10px;
   
         &:before {
-          content: '<h1>';
+          content: '<h1>'; // h1 tags displayed
           font-family: 'La Belle Aurore', cursive;
           color: #FD7A2C;
           font-size: 18px;
@@ -78,17 +79,19 @@
           left: -30px;
           bottom: -20px;
           margin-left: 20px;
-          opacity: 0.6;
+          opacity: 0.6; // s;ightly visible
         }
       }
   
-      p {
-        font-size: 13px;
+      p { // paragraph
+        font-size: 20px;
         color: #fff;
         font-family: sans-serif;
         font-weight: 300;
         max-width: fit-content;
         animation: pulse 1s;
+
+        // animation time breaks wetween each paragraph
         &:nth-of-type(1) {
           animation-delay: 1.1s;
         }

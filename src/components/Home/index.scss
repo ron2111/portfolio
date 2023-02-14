@@ -7,7 +7,7 @@
       width: 40%;
       max-height: 90%;
     }
-  
+ 
     h1 {
       color: #fff;
       font-size: 56px;
@@ -50,6 +50,8 @@
         animation-delay: 1.4s;
       }
     }
+
+
   
     h2 {
       color: #8d8d8d;
@@ -84,8 +86,34 @@
         color: #333;
       }
     }
+    
+      
   }
   
+  .gif {
+    display: block;
+    border-radius: 30px;
+    z-index: 0;
+    width: 620px;
+    height: auto;
+    margin-top: 80px;
+    margin-left: 800px;
+    animation: updown 3s linear infinite;
+    // Logo Rotation
+    animation-delay: 1.4s;
+    
+}
+@keyframes updown {
+  0% {
+      transform: translateY(-20px);
+  }
+  50% {
+      transform: translateY(20px);
+  }
+  100% {
+      transform: translateY(-20px);
+  }
+}
   
   
   @media screen and (max-width: 1200px) {
@@ -128,5 +156,14 @@
       bottom: auto;
       left: 0;
       margin: auto;
+    }
+
+  }
+
+  @media (max-width: 991px) {
+   .gif {
+      width: 80%;
+      float: none;
+      margin: 0 auto 25px auto;
     }
   }
