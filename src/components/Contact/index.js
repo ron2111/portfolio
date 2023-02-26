@@ -23,10 +23,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_8yagw3l',
-        'template_kx8n1au',
+        'service_8yagw3l', // service id
+        'template_kx8n1au', // templateId
         form.current,
-        'kRQFquVBiGpfbnTQL'
+        'kRQFquVBiGpfbnTQL' // userId / public key
       )
       .then(
         () => {
@@ -93,6 +93,23 @@ const Contact = () => {
               </ul>
             </form>
           </div>
+        </div>
+        <div className="info-map">
+          Rohan Sharma,
+          <br />
+          India,
+          <br />
+          Gurugram,Haryana <br />
+          122001 <br />
+          <span> 2111rohan@gmail.com</span>
+        </div>
+
+        <div className="map-wrap">
+          <iframe
+            width="800"
+            height="1050"
+            src="https://api.maptiler.com/maps/hybrid/?key=TWqKbccwsCEbhAglXecG#9.7/28.45217/77.03526"
+          ></iframe>
         </div>
       </div>
       <Loader type="pacman" />

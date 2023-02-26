@@ -1,0 +1,24 @@
+{
+  "portfolio": [
+    {
+      "image": "../data/logo2.png",
+      "name": "Codepal",
+      "description": "ReactJS, NodeJS, Socket.io, Netlify",
+      "url": "https://codepal-realtime.netlify.app/"
+    },
+
+    {
+      "image": "../logo2.png",
+      "name": "NFT Marketplace",
+      "description": "Solidity, Metamask, Ethereum",
+      "url": "https://codepal-realtime.netlify.app/"
+    },
+
+    {
+      "image": "../codepal.jpg",
+      "name": "Startlet Website",
+      "description": "HTML, CSS, JS, Bootstrap",
+      "url": "https://startlet.in/"
+    }
+  ]
+}

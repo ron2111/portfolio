@@ -74,31 +74,21 @@
       text-align: center;
       margin-right: 10px;
     }
+
+    .flat-button:hover {
+      color: #321a69;
+      font-weight: 750;
+      background: #FD7A2C;
+  }
   }
   
-  .map-wrap {
-    background: rgba(8, 253, 216, 0.1);
-    float: right;
-    width: 53%;
-    height: 115%;
-    margin-top: -3%;
-  }
-  
-  .leaflet-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    animation: backInRight 1s 1.2s;
-    animation-fill-mode: forwards;
-  }
-  
+
   .info-map {
     position: absolute;
     background: #000;
     top: 50px;
     right: 30%;
-    z-index: 999999;
+    z-index: 999999; // top of everything
     width: 267px;
     padding: 20px;
     color: #fff;
@@ -109,14 +99,35 @@
     animation: fadeIn 1s 1.5s;
     animation-fill-mode: forwards;
   
+    // holds the email
     span {
       font-size: 16px;
-  
-      span {
-        color: #ffd700;
-      }
+      display: block;
+      padding-top: 20px;
+      color: #ffd700;
+      
     }
   }
+
+  // map
+  .map-wrap {
+    background: #321a69;
+    float: right;
+    width: 53%;
+    height: 100%;
+    margin-top: -3%;
+  }
+  
+  .leaflet-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
+  }
+  
+ 
   
   @media screen and (max-width: 1200px) {
     .map-wrap {
