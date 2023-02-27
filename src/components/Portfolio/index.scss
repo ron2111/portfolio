@@ -136,24 +136,23 @@
     }
 }
 
+
+
+
 @media screen and (max-width:415px) {
 
-    .container .portfolio-page {
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
+    
+       
 
-
-        h1.page-title {
-            margin-left: 20px;
-            margin-top: 20px;
+        .portfolio-page .image-box .title {
+            font-size: 15px;
+            word-wrap: break-word;
         }
 
-        .image-box {
-            height: 200px;
-            max-width: calc(50% - 10px);
+        .portfolio-page .image-box .description {
+            font-size: 9px;
+            word-wrap:break-word;
         }
-    }
 }
 
 

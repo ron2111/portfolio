@@ -1,7 +1,7 @@
 {
   "portfolio": [
     {
-      "image": "../data/logo2.png",
+      "image": "../../assets/images/logo-r.png",
       "name": "Codepal",
       "description": "ReactJS, NodeJS, Socket.io, Netlify",
       "url": "https://codepal-realtime.netlify.app/"
