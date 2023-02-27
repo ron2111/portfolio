@@ -29,23 +29,43 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+              strArray={['E', 'x', 'p', 'e', 'r', 'i', 'e', 'n', 'c', 'e']}
               idx={15}
             />
           </h1>
-          <p>
-            I'm a very ambitious full-stack developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
-          </p>
-          <p align="LEFT">
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
-          </p>
-          <p>
-            If I need to define myself in one sentence that would be a a fitness
-            fanatic, Video Editing enthusiast, and tech-obsessed!!!
-          </p>
+          <div className="contents">
+            <div className="box">
+              <h4>Nov 2022 - Jan 2023</h4>
+              <h2>App Support Intern</h2>
+              <h3>ClubRealz Limited</h3>
+              <p className="para">
+                Reported and helped with bug fixes, ensuring quick and efficient
+                resolution of technical issues while documenting and tracking
+                the problem resolutions.
+              </p>
+            </div>
+
+            <div className="box">
+              <h4>Aug 2022 - Nov 2022</h4>
+              <h2>Web Developer Intern</h2>
+              <h3>DTU USIP</h3>
+              <p className="para">
+                Completely restructured the Student portal and Faculty portal
+                using React JS with fee payment functionality and marks entry
+                platform.
+              </p>
+            </div>
+
+            <div className="box">
+              <h4> Dec 2021 - April 2022</h4>
+              <h2>Java DSA Teaching Assistant Intern</h2>
+              <h3>Coding Ninjas</h3>
+              <p className="para">
+                Resolved & evaluated more than 600 doubts & projects on DSA &
+                OOPS in Java with average doubt resolution rating above 4.75/5.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Skills Spin Cube */}

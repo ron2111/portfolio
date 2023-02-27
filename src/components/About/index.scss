@@ -1,3 +1,67 @@
+.contents {
+  margin-top: -30px;
+  margin-left: 80px;
+  padding-left: 33px;
+  border-left: 2px solid #FD7A2C;
+ 
+}
+
+.contents .box{
+  width: 520px;
+  position: relative;
+  padding: 15px;
+  border: 1px solid #29252516;
+  background-color: #321a69;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.contents .box:hover{
+box-shadow: 0px 3px 12px 0px rgb(144, 0, 255);
+border: 1px solid transparent;
+}
+
+.contents .box::before{
+content: '';
+position: absolute;
+width: 16px;
+height: 16px;
+border-radius: 50%;
+right: 105%;
+top: 35px;
+background-color: #FD7A2C;
+
+
+}
+.contents .box h4{
+  margin-top: -5px;
+  color: white;
+}
+.contents .box h2{
+  margin-top: -10px;
+  font-weight: 800;
+  font-size: 20px;
+  font-family:Helvetica;
+  color: #FD7A2C;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 3px
+  
+}
+
+.contents .box h3{
+  margin-top: -8px;
+  font-size: 17px;
+   color: white;
+   
+   font-weight: 800;
+}
+.contents .box p{
+  margin-top: -5px;
+  font-size: 15px;
+}
+
 .stage-cube-cont {
     width: 50%; // to take only half the page
     height: 100%;
@@ -83,3 +147,38 @@
     }
   }
   
+
+  @media screen and (max-width: 1200px) {
+    .contents{
+      margin-left: 30px;
+      padding-left: 28px;
+    }
+    .contents .box{
+     
+     width: 400px;
+    }
+
+    .cubespinner {
+      margin-top: 750px;
+      
+    }
+
+  }
+
+  @media screen and (max-width: 415px) {
+
+    .contents{
+      padding-left: 23px;
+    }
+    .contents .box{
+     
+      width: 300px;
+     }
+
+     .cubespinner {
+      display: none;
+    
+    }
+  }
+
+ 
