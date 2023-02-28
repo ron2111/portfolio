@@ -29,12 +29,12 @@ const Portfolio = () => {
   const renderPortfolio = (portfolio) => {
     return (
       <div className="images-container">
-        {portfolio.map((port, idx) => {
+        {/* {portfolio.map((port, idx) => {
           // project mapping
           return (
             <div className="image-box" key={idx}>
               <img
-                src={port.image}
+                src={require('../../assets/images/codepal.jpg')}
                 className="portfolio-image"
                 alt="portfolio"
               />
@@ -47,7 +47,69 @@ const Portfolio = () => {
               </div>
             </div>
           )
-        })}
+        })} */}
+
+        <div className="image-box">
+          <img
+            src={require('../../assets/images/codepal.jpg')}
+            className="portfolio-image"
+            alt="portfolio"
+          />
+          <div className="content">
+            <p className="title">Codepal</p>
+            <h4 className="description">ReactJS, NodeJS, Socket.io, Netlify</h4>
+            <button
+              className="btn"
+              onClick={() =>
+                window.open('https://codepal-realtime.netlify.app/')
+              }
+            >
+              View
+            </button>
+          </div>
+        </div>
+
+        {/* ---------------- */}
+
+        <div className="image-box">
+          <img
+            src={require('../../assets/images/nft.jpg')}
+            className="portfolio-image"
+            alt="portfolio"
+          />
+          <div className="content">
+            <p className="title">NFT Marketplace</p>
+            <h4 className="description">Solidity, Metamask, Ethereum</h4>
+            <button
+              className="btn"
+              onClick={() =>
+                window.open('https://nft-marketplace.netlify.app/')
+              }
+            >
+              View
+            </button>
+          </div>
+        </div>
+
+        {/* ------------------ */}
+
+        <div className="image-box">
+          <img
+            src={require('../../assets/images/startlet.jpg')}
+            className="portfolio-image"
+            alt="portfolio"
+          />
+          <div className="content">
+            <p className="title">Startlet Website</p>
+            <h4 className="description">HTML, CSS, JS, Bootstrap</h4>
+            <button
+              className="btn"
+              onClick={() => window.open('https://startlet.in/"')}
+            >
+              View
+            </button>
+          </div>
+        </div>
       </div>
     )
   }

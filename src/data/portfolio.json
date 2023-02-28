@@ -1,7 +1,7 @@
 {
   "portfolio": [
     {
-      "image": "../../assets/images/logo-r.png",
+      "image": "{require('../../assets/images/logo-r.png')}",
       "name": "Codepal",
       "description": "ReactJS, NodeJS, Socket.io, Netlify",
       "url": "https://codepal-realtime.netlify.app/"
@@ -11,11 +11,11 @@
       "image": "../logo2.png",
       "name": "NFT Marketplace",
       "description": "Solidity, Metamask, Ethereum",
-      "url": "https://codepal-realtime.netlify.app/"
+      "url": "https://nft-marketplace.app/"
     },
 
     {
-      "image": "../codepal.jpg",
+      "image": "../../assets/images/logo-r.png",
       "name": "Startlet Website",
       "description": "HTML, CSS, JS, Bootstrap",
       "url": "https://startlet.in/"
