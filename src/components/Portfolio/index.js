@@ -104,7 +104,7 @@ const Portfolio = () => {
             <h4 className="description">HTML, CSS, JS, Bootstrap</h4>
             <button
               className="btn"
-              onClick={() => window.open('https://startlet.in/"')}
+              onClick={() => window.open('https://startlet.in/')}
             >
               View
             </button>
