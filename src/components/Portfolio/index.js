@@ -57,7 +57,7 @@ const Portfolio = () => {
           />
           <div className="content">
             <p className="title">Codepal</p>
-            <h4 className="description">ReactJS, NodeJS, Socket.io, Netlify</h4>
+            <h4 className="description">ReactJS, NodeJS, Socket.io</h4>
             <button
               className="btn"
               onClick={() =>
@@ -79,11 +79,13 @@ const Portfolio = () => {
           />
           <div className="content">
             <p className="title">NFT Marketplace</p>
-            <h4 className="description">Solidity, Metamask, Ethereum</h4>
+            <h4 className="description">Solidity, NextJS, Hardhat</h4>
             <button
               className="btn"
               onClick={() =>
-                window.open('https://nft-marketplace.netlify.app/')
+                window.open(
+                  'https://github.com/ron2111/NFT-Marketplace-Smart-Contract'
+                )
               }
             >
               View
